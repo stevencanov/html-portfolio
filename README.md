@@ -43,4 +43,4 @@ Contact:
 Email: stevencanov@gmail.com
 Phone: 3472880946
 Portfolio: www.johndoe.com
-GitHub: github.com/johndoe
+GitHub: stevencanov.github.io/html-portfolio/
