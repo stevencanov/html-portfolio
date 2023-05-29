@@ -1,22 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Steven's Portfolio</title>
+    <title>Index Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        h1 {
+            margin: 0;
+        }
+        
+        main {
+            margin: 20px;
+        }
+        
+        .project {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+        
+        .project h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+        
+        .project p {
+            margin: 10px 0;
+        }
+        
+        .project a {
+            color: #333;
+            text-decoration: none;
+        }
+        
+        .project a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Animation */
+        .project.animate {
+            animation: fade-in 0.5s ease-out;
+            animation-fill-mode: forwards;
+        }
+        
+        @keyframes fade-in {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(event) {
+            var projects = document.getElementsByClassName("project");
+            
+            function animateProjects() {
+                var delay = 0;
+                for (var i = 0; i < projects.length; i++) {
+                    setTimeout(function(project) {
+                        project.classList.add("animate");
+                    }, delay, projects[i]);
+                    delay += 200; // Adjust the delay between each project animation
+                }
+            }
+            
+            animateProjects();
+        });
+    </script>
 </head>
-
 <body>
-  <h1>Steven Cano's Portfolio</h1>
-  <h2>I'm a Web Developer</h2>
-  <hr />
-  <h3><a href="./public/movie-ranking.html">Movie Ranking Project</a></h3>
-  <img src="./assets/images/movie-ranking.png" height="200" alt="movie ranking project preview"/>
-  <h3><a href="./public/birthday-invite.html">Birthday Invite Project</a></h3>
-  <img src="./assets/images/birthday-invite.png" height="200" alt="birthday invite project preview"/>
-  <hr />
-  <a href="./public/about.html">About Me</a>
-  <a href="./public/contact.html">Contact Me</a>
-</body>
+    <header>
+        <h1>Index Portfolio</h1>
+    </header>
+    
+    <main>
+        <div class="project">
+            <h2>Project 1</h2>
+            <p>This is the description of project 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#">Read More</a>
+        </div>
+        
+        <div class="project">
+            <h2>Project 2</h2>
+            <p>This is the description of project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#">Read More</a>
+        </div>
+        
+        <div class="project">
+            <h2>Project 3</h2>
+            <p>This is the description of project 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#">Read More</a>
+        </div>
 
+        <a href="./public/about.html">About Me</a>
+        <a href="./public/contact.html">Contact Me</a>
+    </main>
+</body>
 </html>
