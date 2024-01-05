@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5eef76af.css",
+    "main.js": "/static/js/main.db73ab00.js",
+    "static/js/787.71e672d5.chunk.js": "/static/js/787.71e672d5.chunk.js",
+    "static/media/Valorax-lg25V.otf": "/static/media/Valorax-lg25V.aefcde538ff97713bf6c.otf",
+    "index.html": "/index.html",
+    "main.5eef76af.css.map": "/static/css/main.5eef76af.css.map",
+    "main.db73ab00.js.map": "/static/js/main.db73ab00.js.map",
+    "787.71e672d5.chunk.js.map": "/static/js/787.71e672d5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5eef76af.css",
+    "static/js/main.db73ab00.js"
+  ]
+}
