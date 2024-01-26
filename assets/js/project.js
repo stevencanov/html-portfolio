@@ -14,7 +14,7 @@ const projects = [
     Githublink: "",
   },
   {
-    title: "Harmony Profeccional services App",
+    title: "Harmony Professional Cleaning Service App",
     cardImage: "assets/images/project-page/Harmonyt.png",
     description: " Cleaning App (React Native & Firebase): Developed a comprehensive cleaning app using React Native, integrating Firebase for real-time data management. The app includes features like task scheduling, reminders, and a collaborative platform for shared household chores..",
     tagimg: "https://image.flaticon.com/icons/png/512/643/643350.png",
